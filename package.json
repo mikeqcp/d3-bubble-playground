@@ -15,7 +15,7 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "serve": "node server.js --env=dev",
     "serve:dist": "node server.js --env=dist",
-    "start": "node server.js --env=dev",
+    "start": "node prod-server.js --env=dist",
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
@@ -69,6 +69,7 @@
   "dependencies": {
     "core-js": "^2.0.0",
     "d3": "^4.5.0",
+    "express": "^4.15.0",
     "lodash": "^4.17.4",
     "materialize-css": "^0.98.0",
     "normalize.css": "^4.0.0",
